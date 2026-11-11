@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(121, 121, 177);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição do "Olá, mundo!"</p>
+
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Digite um número: ")); //window.prompt("Digite outro número: ") --> String
+        var n2 = Number.parseFloat(window.prompt("Digite outro número: ")); //window.prompt("Digite outro número: ") --> String
+
+
+        var soma = n1 + n2;
+        window.alert("A soma dos valores é: " + soma);
+        // (number + number) para adição
+        //(String + number) para concatenação
+
+        var n3 = Number(window.prompt("Digite outro número: ")); //window.prompt("Digite outro número: ") --> String
+        var n4 = Number(window.prompt("Digite outro número: "));
+
+        var soma = n3 + n4;
+        window.alert("A soma dos valores é: " + String(soma)); // ou, soma.toString()
+        // (number + number) para adição
+        //(String + number) para concatenação
+        console.log("---------------");
+
+        var nome = String(window.prompt("Digite seu nome: "));
+        var idade = parseInt(window.prompt("Digite sua idade: "));
+        var nota = parseFloat(window.prompt("Digite sua nota de matemática: "));
+
+        window.alert(`O aluno ${nome} com ${idade} anos tirou a nota ${nota} em matemática.`) 
+
+    </script>
+</body>
+
+</html>
